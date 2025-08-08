@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Serhii Soloviov
+      changes:
+        - sqlFile:
+            path: sql/ddl/devices_table.sql
+            relativeToChangelogFile: true
