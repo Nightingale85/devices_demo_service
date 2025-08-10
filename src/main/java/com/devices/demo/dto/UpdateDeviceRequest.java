@@ -2,12 +2,11 @@ package com.devices.demo.dto;
 
 import com.devices.demo.entity.DeviceState;
 import lombok.Data;
+import lombok.Value;
 
 @Data
 public class UpdateDeviceRequest {
-
-  private String name;
-  private String brand;
-  private DeviceState state;
-
+   String name;
+   String brand;
+   DeviceState state;
 }

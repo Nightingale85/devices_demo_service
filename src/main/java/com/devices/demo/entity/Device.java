@@ -1,6 +1,7 @@
 package com.devices.demo.entity;
 
 import jakarta.persistence.*;
+import java.time.Instant;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
@@ -41,6 +42,9 @@ public class Device {
 
     @CreationTimestamp
     @Column(name = "creation_time", updatable = false)
-    private LocalDateTime creationTime;
+    private Instant creationTime;
 
+    @Version
+    @Column(name = "version")
+    private Long version;
 }
